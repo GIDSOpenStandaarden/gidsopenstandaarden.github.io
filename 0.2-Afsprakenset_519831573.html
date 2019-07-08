@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Afsprakenstelsel : 0.2 Afsprakenset</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Afsprakenstelsel</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Afsprakenstelsel-Home_516718708.html">Afsprakenstelsel Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SamenBeter-versie-0.2-SNS---Launch_519897089.html">SamenBeter versie 0.2 SNS - Launch</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Release-informatie_518848548.html">Release informatie</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Afsprakenstelsel : 0.2 Afsprakenset
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Remy Lamers</span>, last modified on jul 04, 2019
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <h3 id="id-0.2Afsprakenset-VoorlopigeUitgangspunten0.2">Voorlopige Uitgangspunten 0.2</h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col style="width: 109.0px;"/><col style="width: 408.0px;"/><col style="width: 842.0px;"/></colgroup><tbody><tr><th class="confluenceTh">Titel</th><th class="confluenceTh">Omschrijving</th><th colspan="1" class="confluenceTh">Beweegredenen</th></tr><tr><td class="confluenceTd">Decentraal waar mogelijk</td><td class="confluenceTd"><br/></td><td colspan="1" class="confluenceTd"><br/></td></tr><tr><td class="confluenceTd">Applicatie bij de bron</td><td class="confluenceTd">In de eerste iteratie is het uitgangs punt dat data bij de bron blijft liggen. <br/>Dit houdt in dat er geen data (behalve contactinformatie) gedeeld wordt over applicaties</td><td colspan="1" class="confluenceTd">Dit is op dit moment een pragmatische keuze om vanuit SamenBeter toegevoegde waarde te kunnen bieden bij het samenbrengen van sociale context en het aangaan van zorgrelaties.</td></tr></tbody></table></div><h3 id="id-0.2Afsprakenset-Afsprakenset">Afsprakenset </h3><div class="table-wrap"><table class="wrapped confluenceTable"><colgroup><col/><col/></colgroup><tbody><tr><th class="confluenceTh">Titel</th><th class="confluenceTh">Beschrijving</th></tr><tr><td class="confluenceTd">Scheiden van data</td><td class="confluenceTd">Op module &amp; per rol aangeven bij welke relatie de data hoort </td></tr><tr><td class="confluenceTd">Verbreken van relaties</td><td class="confluenceTd"><p>Het verbreken / ontzeggen van toegang tot data is functionaliteit die geimplementeerd dient te zijn in ieder aangesloten applicatie</p><ul><li>Verbreken van relatie met contacten</li><li>Verbreken van relatie van specifiek contact tot specifieke data</li><li>Verbreken van bestaan in systeem</li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Toegang tot data binnen relatie</td><td colspan="1" class="confluenceTd"><ul><li><span style="color: rgb(0,0,0);">Beiden partijen hebben toegang tot de data die binnen die relatie gedeeld of gecreëerd is</span></li><li><span style="color: rgb(0,0,0);">Het protocol maakt expliciet dat beide partijen toegang hebben tot binnen een relatie gedeelde data en dat software die het protocol implementeert voor de gebruikers zichtbaar moet maken dat de gedeelde data toegankelijk is voor de andere partij</span></li></ul></td></tr><tr><td colspan="1" class="confluenceTd">Stappen &amp; afspraken Implementatie SNS-Launch</td><td colspan="1" class="confluenceTd"><ol class="ol1"><li class="li1">De koppeling wordt gelegd tussen twee testomgevingen</li><li class="li1">De koppeling wordt getest en goedgekeurd door beide partijen in de testomgeving</li><li class="li1">Er wordt gezamenlijk een moment gekozen waarbij de implementatie in productie wordt uitgevoerd</li><li class="li1">Er is een testomgeving beschikbaar, ook na de inproductiename.</li><li class="li1">De testomgeving heeft bij voorkeur dezelfde look &amp; feel als de productie-omgeving<ol><li class="li1">Exclusief data van productiegebruikers;</li><li class="li1">Inclusief productie content (waar mogelijk);</li><li class="li1">Inclusief links naar testomgeving van aangesloten leveranciers;</li><li class="li1">Gelieve te linken van TST naar TST en niet van ACC naar TST of andersom.</li></ol></li><li class="li1">Het is duidelijk voor gebruikers van de portalen waar zij terecht kunnen voor supportvragen</li><li class="li1">Gebruikers van de portalen zijn in staat om hun account te verwijderen</li><li class="li1">Er wordt aan beide zijden vastgelegd hoeveel launches er per dag/maand worden uitgevoerd. (Unieke gebruikers &amp; totaal aantal sessies)</li><li class="li1">De koppeling wordt als een nieuw tabblad geopend. Browsers als IE &amp; Safari staan cookies binnen een iframe niet toe.<span> </span><br/>Hierbij is het wel van belang dat er vermeld wordt dat de koppeling in een nieuw tabblad geopend wordt.</li><li class="li1">Er wordt gemeten hoevaak de launch wordt gebruikt, waarbij data geanonimiseerd kan worden.<ol><li class="li1"><span style="color: rgb(34,34,34);">Een eenvoudige count(*) group by day/month van het aantal<span> </span></span><span class="il" style="color: rgb(34,34,34);">launches</span><span style="color: rgb(34,34,34);"><span> </span>is al voldoende. </span></li></ol></li></ol></td></tr></tbody></table></div>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on jul 08, 2019 13:44</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>

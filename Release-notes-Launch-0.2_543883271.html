@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Afsprakenstelsel : Release notes Launch 0.2</title>
+        <link rel="stylesheet" href="styles/site.css" type="text/css" />
+        <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    </head>
+
+    <body class="theme-default aui-theme-default">
+        <div id="page">
+            <div id="main" class="aui-page-panel">
+                <div id="main-header">
+                    <div id="breadcrumb-section">
+                        <ol id="breadcrumbs">
+                            <li class="first">
+                                <span><a href="index.html">Afsprakenstelsel</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Afsprakenstelsel-Home_516718708.html">Afsprakenstelsel Home</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="SamenBeter-versie-0.2-SNS---Launch_519897089.html">SamenBeter versie 0.2 SNS - Launch</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="Release-informatie_518848548.html">Release informatie</a></span>
+                            </li>
+                                                    <li>
+                                <span><a href="0.2-Launch_543883268.html">0.2 Launch</a></span>
+                            </li>
+                                                </ol>
+                    </div>
+                    <h1 id="title-heading" class="pagetitle">
+                                                <span id="title-text">
+                            Afsprakenstelsel : Release notes Launch 0.2
+                        </span>
+                    </h1>
+                </div>
+
+                <div id="content" class="view">
+                    <div class="page-metadata">
+                        
+        
+    
+        
+    
+        
+        
+            Created by <span class='author'> Remy Lamers</span>, last modified on mei 24, 2019
+                        </div>
+                    <div id="main-content" class="wiki-content group">
+                    <p>Release 0.2 ondersteunt functioneel de onderstaande functionaliteiten.<br/><br/><strong>Use-case 1:</strong> Als persoon wil ik vanuit een wijkplatform drempelloos (zonder account aanmaken) naar een e-health module uit een e-health platform navigeren</p><p><strong>Acceptatiecriteria:</strong> </p><ol><li>Persoon navigeert tussen wijkplatform en zorgplatform, zonder nogmaals in te hoeven loggen</li><li>Persoon kan een specifieke zelfzorg-module openen zonder in te hoeven loggen</li><li>Persoon ziet dat het openen van zelfzorg-module in een nieuw tab gebeurt, bv door het <a href="https://www.pngkey.com/detail/u2q8t4y3u2i1e6t4_open-new-tab-arrow-window-comments-open-new/" class="external-link" rel="nofollow">toevoegen van een icoon</a></li><li>Indien vereist kan de zelfzorg-module om aanvullende gegevens vragen.</li><li>Persoon krijgt toegang tot e-health platform zonder dat persoon hier vooraf een account voor heeft aangemaakt.<br/><ol><li>Het aanmaken van een account gebeurt onder water, bij het uitvoeren van de launch. De gebruiker geeft hiervoor consent (Zie use-case 2)</li></ol></li></ol><p><br/></p><div class="confluence-information-macro confluence-information-macro-information"><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body">Toegevoegd t.o.v. 0.1</div></div><p class="sc-iEEPnt fDMtSb"><strong>Use-case 2: </strong>Als persoon wil ik bij het openen van een zelfzorg-module via het wijkportaal, voor de eerste keer een scherm krijgen dat mij informeert welke gegevens gedeeld worden met het zorgportaal.</p><p class="sc-iEEPnt fDMtSb"><strong>Acceptatiecriteria: </strong></p><ol><li><p>Persoon ziet de eerste keer dat een zelfzorg-module van een zorgportaal waar persoon nog niet bekend is, welke gegevens van het wijkportaal aan het zorgportaal verstrekt worden.</p><ol><li>Indien gebruiker accepteert, maakt ontvangende applicatie onderwater een account aan voor de gebruiker.</li></ol></li><li><p>Persoon kan aangeven dat het bericht gelezen is, hierna zal het bericht niet nogmaals verschijnen bij het uitvoeren van een launch</p></li><li>Wanneer het persoon het bericht verborgen heeft, en launcht naar een applicatie waar gebruiker niet bekend is, ontvangt gebruiker wederom het consent bericht.</li></ol><h4 class="sc-iEEPnt fDMtSb" id="ReleasenotesLaunch0.2-Wijzigingenindocumentatie">Wijzigingen in documentatie</h4><p>In versie 0.2 is het volgende gewijzigd om use case 2 te ondersteunen:</p><p>Plek van wijziging: Pagina; <a class="createlink" href="/wiki/pages/createpage.action?spaceKey=AF&amp;title=SNS+Launch+protocol+implementation+guide&amp;linkCreation=true&amp;fromPageId=543883271">SNS Launch protocol implementation guide</a>, als onderdeel van: Communication protocol</p><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Wijziging</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><h3 id="ReleasenotesLaunch0.2-Theform-post-redirectmessage">The form-post-redirect message</h3><p>In step 5) in the communication protocol, the user is redirected to the producer with the JWT message using a post form. The form needs to:</p><ul><li>Forward the JWT token in the request field of a form.</li><li>The page needs to request consent to the user and inform the user about the information being shared.</li></ul><p><a style="text-decoration: none;" href="https://gidsopenstandaarden.atlassian.net/wiki/spaces/AF/pages/522846226/SNS+Launch+protocol+implementation+guide#SNSLaunchprotocolimplementationguide-AppendixD,redirectpagereferenceimplementation" rel="nofollow">Appendix D</a><span> </span>contains a reference implementation of such a page.</p></div></div><div class="confluence-information-macro confluence-information-macro-information"><p class="title">Toevoeging</p><span class="aui-icon aui-icon-small aui-iconfont-info confluence-information-macro-icon"></span><div class="confluence-information-macro-body"><p><a class="createlink" href="/wiki/pages/createpage.action?spaceKey=AF&amp;title=Appendix+D%2C+redirect+page+reference+implementation&amp;linkCreation=true&amp;fromPageId=543883271">Appendix D, redirect page reference implementation</a></p><p>On this page, a reference design implementation can also be found</p></div></div><p><br/></p><p><br/></p>
+                    </div>
+
+                    
+                                                      
+                </div>             </div> 
+            <div id="footer" role="contentinfo">
+                <section class="footer-body">
+                    <p>Document generated by Confluence on jul 08, 2019 13:44</p>
+                    <div id="footer-logo"><a href="http://www.atlassian.com/">Atlassian</a></div>
+                </section>
+            </div>
+        </div>     </body>
+</html>
